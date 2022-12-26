@@ -16,8 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          #command: "echo Hello, World-111! "
-          command: "lua lua2c.lua test/bisect.lua "
+          command: "lua lua2c.lua test/bisect.lua"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -25,4 +24,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      
